@@ -1,0 +1,39 @@
+<div class="cajaLog">
+  <mat-spinner *ngIf="cargando" diameter="120" color="" class="spi"></mat-spinner>
+
+  <div class="login" *ngIf="!cargando">
+    <div *ngIf="login">
+      <h2 >Login</h2>
+      <mat-form-field appearance="fill">
+        <mat-label class="letras"> Usuario </mat-label>
+        <input [(ngModel)]="loginUsersData.name"  name="name" type="text" matInput id="input1"  onchange="PermitirLogin()" class="letras" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill"  id="second">
+        <mat-label class="letras"> Contraseña </mat-label>
+        <input [(ngModel)]="loginUsersData.password"  name="password" id="input2"  onchange="PermitirLogin()" class="letras" type="password" matInput required>
+      </mat-form-field>
+      <br>
+      <button (click)="LoginUsers()" type="submit" mat-raised-button color="primary" id="btn" disabled="false"  > Ingresar </button>
+      <a (click)="CambiarLogin()" id="a1"> Registrase </a>
+    </div>
+    <div *ngIf="!login">
+      <h2 >Registrar </h2>
+      <mat-form-field appearance="fill">
+        <mat-label class="letras"> Usuario </mat-label>
+        <input [(ngModel)]="loginUsersData.name"  name="name" type="text" matInput id="input1"  onchange="PermitirLogin()" class="letras" required>
+      </mat-form-field>
+
+      <mat-form-field appearance="fill"  id="second">
+        <mat-label class="letras"> Password </mat-label>
+        <input [(ngModel)]="loginUsersData.password"  name="password" id="input2"  onchange="PermitirLogin()" class="letras" type="password" matInput required>
+      </mat-form-field>
+      <br>
+      <button (click)="LoginUsers()" type="submit" mat-raised-button color="warn" id="btn" > Registrar </button>
+      <a (click)="CambiarLogin()" id="a2"> Loguiarse </a>
+    </div>
+
+
+  </div>
+</div>
+

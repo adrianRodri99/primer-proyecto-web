@@ -1,0 +1,301 @@
+
+
+body{
+  /* width: 100%;
+  background-image: url('../../../assets/img/fondos/fondo.jpg');
+  background-size: 100%; */
+
+  position: fixed;
+
+}
+
+
+.example-card {
+  width: 270px;
+  height: 350px;
+  margin: 5px;
+
+}
+
+.example-header-image {
+  background-image: url('../../../assets/img/users.png');
+  background-size: cover;
+}
+#ima{
+  width: 100%;
+  height: 100%;
+}
+
+#cajaDepor{
+  width: 300px;
+  margin: 2%;
+
+}
+
+#solicitudes{
+  margin: 3%;
+  right: 6px;
+}
+
+.mat-raised-button{
+
+  margin-bottom: 2%;
+}
+.titulo{
+  font-size: 500%;
+}
+
+#info{
+  width: 1050px;
+  position: fixed;
+  padding-left: 30%;
+}
+
+
+#futbol{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/futbol11n.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+
+}
+
+#futsal{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/futbol_sala.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+
+#baloncesto{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/balocensto.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+
+#baseball{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/baseball.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+
+#ajedrez{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/ajedrez.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+
+#volley{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/voleibol_de_playa.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#volleyball{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/voleibol.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+
+}
+#soga{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/tiroSoga.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#balonmano{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/balonmano.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#softball{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/softboll.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#judo{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/judo.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#tenis{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/tenis_mesa.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#maraton{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/mataton.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+
+#atletismo{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/atletismo.webp');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#gimnasia{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/gimnacia.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#domino{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/domino.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#kikimbol{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/kikinboll.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#orientacion{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/carrera_orientacion.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#fitness{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/fitnes.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#dominio{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/dominio_balon.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+#frontenis{
+  margin-top: 0%;
+  background-image: url('../../../assets/img/deportes/frontenis.jpg');
+  background-repeat: no-repeat;
+  background-size: 100%;
+  width: 200px;
+  height: 120px;
+}
+
+
+/* conteo regresivo */
+
+section {
+  width: 100%;
+  height: 100%;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+ul {
+  display: flex;
+  justify-content: center;
+}
+
+.coming-soon {
+  width: 100%;
+}
+
+.time-countdown ul {
+  margin: 36px auto;
+}
+
+.time-countdown ul li.count-bg-one {
+  background: whitesmoke;
+}
+
+.time-countdown ul li.count-bg-two {
+  background: whitesmoke;
+}
+
+.time-countdown ul li.count-bg-three {
+  background: whitesmoke;
+}
+
+.time-countdown ul li.count-bg-four {
+  background: whitesmoke;
+  margin-right: 0;
+}
+
+
+/* letras dias horas min  */
+.time-countdown ul li {
+  width: 12%;
+  margin-right: 4%;
+  text-align: center;
+  display: inline-block;
+  padding: 24px 20px;
+  color: black;
+
+}
+
+.radius {
+  border-radius: 5px;
+}
+
+/* numeros de la cuenta */
+.time-countdown ul li span {
+  font-family: 'Poppins', sans-serif;
+  font-size: 300%;
+  line-height: 60px;
+  font-weight: 700;
+  display: block;
+  color: black;
+}
+
+
+

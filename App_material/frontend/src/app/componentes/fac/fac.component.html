@@ -1,0 +1,86 @@
+
+
+<mat-toolbar >
+  <a class="spacios-btn"></a>
+  <span> Deportes </span>
+  <a class="spacios-btn"></a>
+</mat-toolbar>
+<body>
+</body>
+<div id="info">
+  <mat-grid-list cols="8" rowHeight="70px"  >
+    <mat-grid-tile [colspan]="8" [rowspan]="2"  >
+      <h1 class="titulo">
+        Juegos Mellas
+      </h1>
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="6"  >
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="4" [rowspan]="5"  [style.background]="'lightblue'">
+      <img src="../../../assets/img/fondos/logo_mella2.jpg" id="ima">
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="2" [rowspan]="6"   >
+
+    </mat-grid-tile>
+
+    <mat-grid-tile [colspan]="4" [rowspan]="2"   [style.background]="'lightgrey'">
+      <section>
+        <div class="coming-soon">
+            <div class="time-countdown">
+                <ul>
+                    <li class="count-bg-one radius"><span id="days">{{day}}</span>Dias</li>
+                    <li class="count-bg-two radius"><span id="hours">{{hours}}</span>Horas</li>
+                    <li class="count-bg-three radius"><span id="minutes">{{minutes}}</span>Minutos</li>
+                    <li class="count-bg-four radius"><span id="seconds">{{seconds}}</span>Segundos</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+    </mat-grid-tile>
+
+
+
+
+
+  </mat-grid-list>
+</div>
+
+<div id="cajaDepor" class="content">
+
+  <div fxLayout="row ">
+    <div fxFlex="" *ngFor="let n of deportes " id="cajitas">
+      <mat-card class="example-card mat-elevation-z24" >
+        <mat-card-header>
+          <div mat-card-avatar class="example-header-image">  </div>
+          <mat-card-title >Deporte: {{n.deporte+' ('+n.sexo.charAt()+')'}}</mat-card-title>
+          <mat-card-subtitle>Capitan: {{n.capitan}}  </mat-card-subtitle>
+          <mat-card-subtitle>Capacidad: {{n.capacidad}}  </mat-card-subtitle>
+        </mat-card-header>
+        <img mat-card-image src=""  > <div class="container" [id]="DarID(n.deporte.toString())"></div>
+        <mat-card-content>
+
+        </mat-card-content>
+        <mat-card-actions>
+          <button mat-raised-button color="accent" (click)="InscribirseEquipo(n)" > Inscribirse </button>
+          <button mat-raised-button color="primary" (click)="VerEquipo(n.deporte)"> Ver Equipo </button>
+          <button mat-raised-button color="warn" (click)="VerSolicitudes(n.deporte)" id="solicitudes"> Ver Solicitudes </button>
+        </mat-card-actions>
+      </mat-card>
+    </div>
+  </div>
+
+
+
+
+
+</div>
+
+
+
+
+

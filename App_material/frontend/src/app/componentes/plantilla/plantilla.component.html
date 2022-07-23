@@ -1,0 +1,67 @@
+
+<div class="container">
+  <mat-toolbar>
+    <span> Plantillas </span>
+    <a class="spacios-btn"></a>
+    <button mat-button color="" id="btn" routerLink="/registrar">Inscribir</button>
+  </mat-toolbar>
+  <div *ngIf="datos.length>0" >
+     <mat-form-field >
+      <mat-label >Buscar</mat-label>
+      <input  matInput (keyup)="BuscarPor($event) " placeholder="buscar por..." type="text" id="filtro">
+    </mat-form-field>
+    <div class="mat-elevation-z16" id="divTabla">
+      <table  mat-table  [dataSource]="dataTabla" matSort >
+
+
+        <!-- Name Column -->
+        <ng-container matColumnDef="name">
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Name </th>
+          <td mat-cell *matCellDef="let element"> {{element.name}} </td>
+        </ng-container>
+
+        <!-- grupo Column -->
+        <ng-container matColumnDef="grupo"  >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header> Grupo </th>
+          <td mat-cell *matCellDef="let element"> {{element.grupo}} </td>
+        </ng-container>
+
+        <!-- sport Column -->
+        <ng-container matColumnDef="deporte" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header > Deporte </th>
+          <td mat-cell *matCellDef="let element"> {{element.deporte}} </td>
+        </ng-container>
+
+        <!-- sexo column -->
+        <ng-container matColumnDef="sexo" >
+          <th mat-header-cell *matHeaderCellDef mat-sort-header > Sexo </th>
+          <td mat-cell *matCellDef="let element"> {{element.sexo}} </td>
+        </ng-container>
+
+        <!-- simulacion de iconos ta a la cara  -->
+        <ng-container matColumnDef="acciones">
+          <th mat-header-cell *matHeaderCellDef>  </th>
+          <td mat-cell *matCellDef="let element"  >
+            <a class="cursorPointer" matTooltip="Ver deportista" (click)="BuscarNombre(element.name)">
+              <mat-icon class="search">  </mat-icon>
+            </a>
+            <a class="cursorPointer"  matTooltip="Eliminar deportista" (click)="EliminarDeportista(element.id, element.deporte)" >
+              <mat-icon class="eliminar">  </mat-icon>
+            </a>
+            <a class="cursorPointer"  matTooltip="Editar deportista" (click)="ActualizarDeportista(element)" >
+              <mat-icon class="editar">  </mat-icon>
+            </a>
+          </td>
+        </ng-container>
+
+
+        <tr mat-header-row *matHeaderRowDef="columnas"></tr>
+        <tr mat-row *matRowDef="let row; columns: columnas;"></tr>
+
+      </table>
+      <mat-paginator [pageSizeOptions]="[5, 10, 20]" *ngIf="mostrarTabla"   ></mat-paginator>
+    </div>
+  </div>
+  <h2 *ngIf="datos.length==0" >No hay deportistas</h2>
+
+</div>

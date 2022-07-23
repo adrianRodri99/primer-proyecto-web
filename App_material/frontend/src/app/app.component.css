@@ -1,0 +1,27 @@
+
+
+.mat-raised-button{
+    margin: 10%;
+    margin-left: 26px;
+  }
+.mat-button{
+
+  border-style: double;
+  margin: 5px;
+  border-radius: 10px;
+
+}
+
+/*
+#icono{
+  background-image:url('../assets/iconos/logout.ico') ;
+  background-size: 100%;
+  background-repeat: no-repeat;
+  width: 120px;
+  height: 120px;
+}
+ */
+
+
+
+

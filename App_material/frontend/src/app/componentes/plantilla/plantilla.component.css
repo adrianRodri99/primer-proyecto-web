@@ -1,0 +1,66 @@
+
+.divTabla{
+  width: 80%;
+}
+
+table{
+
+  margin: 20px;
+  width: 80%;
+
+
+}
+th{
+  width: 20%;
+}
+
+.cursorPointer{
+  cursor: pointer;
+
+}
+
+td a{
+
+  text-align: right;
+}
+
+/* lo q tengo son imagenes no iconos  */
+.search{
+  background-image: url('../../../assets/iconos/search.ico');
+  background-size: 100%;
+  margin:auto;
+  margin-left: 00px;
+}
+.editar{
+  background-image: url('../../../assets/iconos/edit.ico');
+  background-size: 100%;
+  margin:auto;
+}
+.eliminar{
+  background-image: url('../../../assets/iconos/delete.ico');
+  background-size: 100%;
+  margin:auto;
+}
+
+.mat-form-field{
+  font-size: 14px;
+  width: 20%;
+  margin-left: 80%;
+
+}
+.mat-paginator{
+  width: 100%;
+}
+
+
+#btn{
+  background-color: azure;
+
+
+}
+
+
+#filtro{
+
+}
+

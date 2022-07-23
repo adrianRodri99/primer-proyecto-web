@@ -1,0 +1,72 @@
+.mat-toolbar{
+  margin-bottom: 5%;
+}
+
+#tabla{
+  margin: 40px;
+
+}
+th{
+  width: 20%;
+}
+
+.mat-form-field{
+  font-size: 14px;
+  width: 20%;
+  margin-left: 80%;
+
+}
+
+
+
+
+table{
+
+  margin: 20px;
+  width: 95%;
+
+
+}
+th{
+  width: 20%;
+}
+
+
+
+td a{
+
+  text-align: right;
+}
+
+/* lo q tengo son imagenes no iconos  */
+.confirmar{
+  background-image: url('../../../assets/iconos/ko2.ico');
+  background-size: 100%;
+
+
+}
+.denegar{
+  background-image: url('../../../assets/iconos/cruz3.ico');
+  background-size: 100%;
+  margin-left: 5%;
+
+}
+
+
+.mat-paginator{
+  width: 97%;
+}
+
+
+#btn{
+  background-color: azure;
+
+
+}
+h2{
+  margin-left: 20%;
+}
+
+
+
+
